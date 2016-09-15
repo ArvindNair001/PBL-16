@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter The Number of Employees:");
         int N = sc.nextInt();
         Employee emp[] = new Employee[N];
@@ -17,6 +17,8 @@ public class Main {
         for (int i = 0; i < N; i++) {
             emp[i].dispDetails();
         }
+    }*/
+    File_Handle file = new File_Handle();
+        file.File();
     }
-
 }
