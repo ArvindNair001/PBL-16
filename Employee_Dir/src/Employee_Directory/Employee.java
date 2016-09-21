@@ -10,7 +10,7 @@ public class Employee {
     long Salary;
     void getData(){
         Department DEPT = new Department();
-        while (true) { //emp_ID check issue fixed
+        while (true) { //emp_ID check issue fixed !
             emp_ID = Integer.parseInt(getInput("\nEnter your Employee ID:"));
             if(!ID_Check(emp_ID)){
                 System.out.println("Please Enter a valid 6 digit Employee ID");
@@ -45,7 +45,7 @@ public class Employee {
         System.out.println("Salary: Rs "+Salary+".00/- only");
     }
     //    public void Name_split (){
-//       String[] arr = Name.split("//s+");
+//       String[] arr = Name.split("//s+");  //not working
 //    }
     boolean ID_Check (int n){
         int count=0;

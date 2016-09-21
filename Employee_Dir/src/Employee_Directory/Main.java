@@ -17,5 +17,8 @@ public class Main {
         for (int i = 0; i < N; i++) {
             emp[i].dispDetails();
         }
+        // The above Array of Objects is to be Stored in the file. -?
+//        File_Handle file = new File_Handle();
+//        file.File();
     }
 }
