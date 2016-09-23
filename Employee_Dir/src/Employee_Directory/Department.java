@@ -3,7 +3,6 @@ package Employee_Directory;
 import java.util.Scanner;
 
 public class Department {
-    private String DEPT;
     byte optn;
 
     void disp_DEPT() { //Temporary may or may not b used.
@@ -32,24 +31,25 @@ public class Department {
         optn = sc.nextByte();
         switch (optn) {
             case 1:
-                DEPT = "Managing";
+                return "Managing";
+
             case 2:
-                DEPT = "HR";
-                ;
+                return "HR";
+
             case 3:
-                DEPT = "Production";
-                ;
+                return "Production";
+
             case 4:
-                DEPT = "Marketing";
+                return "Marketing";
 
             case 5:
-                DEPT = "Software";
+                return "Software";
 
             case 6:
-                DEPT = "Development";
+                return "Development";
 
             case 7:
-                DEPT = "Temporary";
+                return "Temporary";
 
             case 8:
                 System.out.println("Select the Sub Department:");
@@ -60,21 +60,21 @@ public class Department {
                 System.out.print("\n Enter the desired option:");
                 optn = sc.nextByte();
                 switch (optn){
-                    case 1: DEPT = "Training"+"-Production";
+                    case 1: return "Training"+"-Production";
 
-                    case 2:DEPT = "Training"+"-Marketing";
+                    case 2:return "Training"+"-Marketing";
 
-                    case 3:DEPT = "Training"+"-Software";
+                    case 3:return "Training"+"-Software";
 
-                    case 4:DEPT = "Training"+"-Development";
+                    case 4:return "Training"+"-Development";
 
                     default:
                         System.out.println("Enter a valid Option!");
-                        break;
                 }
+                break;
             default:
                 System.out.println("Enter a valid Option!");
         }
-        return DEPT;
+        return null;
     }
 }
