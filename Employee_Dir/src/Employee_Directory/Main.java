@@ -1,10 +1,11 @@
 package Employee_Directory;
 
 // Make a Department Class with disp method showing all the departments //fixed
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter The Number of Employees:");
         int N = sc.nextInt();
@@ -14,10 +15,18 @@ public class Main {
             emp[i] = new Employee();
             emp[i].getData();
         }
+        File_Handle file = new File_Handle();
         for (int i = 0; i < N; i++) {
-            emp[i].dispDetails();
+            file.File_Write(emp[i]);
         }
-        // The above Array of Objects is to be Stored in the file. -?
+
+//        for (int i = 0; i < N; i++) {
+            file.File_Read();
+//        }
+
+//        for (int i = 0; i < N; i++) {
+//            emp[i].dispDetails();
+//        }
 //        File_Handle file = new File_Handle();
 //        file.File();
     }
