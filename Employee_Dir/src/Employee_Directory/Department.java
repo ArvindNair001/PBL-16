@@ -16,7 +16,6 @@ public class Department {
     }
 
     String DEPT_Select() {
-//        System.out.println("Do yo Want the list of department of this organization?");
         System.out.println("Select The Department:");
         System.out.println("\n1.Managing");
         System.out.println("2.HR");
