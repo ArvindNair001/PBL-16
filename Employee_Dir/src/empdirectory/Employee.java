@@ -1,14 +1,14 @@
-package Employee_Directory;
+package empdirectory;
 
 import java.util.Scanner;
 
 public class Employee {
-    String Name, F_Name, S_Name;
-    String Quali, dept;
-    int emp_ID;
-    byte Age, exp;
-    long Salary;
-    void getData(){
+    public String Name, F_Name, S_Name;
+    public String Quali, dept;
+    public int emp_ID;
+    public byte Age, exp;
+    public long Salary;
+    public void getData(){
         Department DEPT = new Department();
         while (true) { //emp_ID check issue fixed !
             emp_ID = Integer.parseInt(getInput("\nEnter your Employee ID:"));

@@ -1,11 +1,11 @@
-package Employee_Directory;
+package empdirectory;
 
 import java.util.Scanner;
 
 public class Department {
     byte optn;
 
-    void disp_DEPT() { //Temporary may or may not b used.
+    /*void disp_DEPT() { //Temporary may or may not b used.
         System.out.println("Following are the departments of ABCD inc.,:");
         System.out.println("\nManaging");
         System.out.println("HR");
@@ -13,9 +13,9 @@ public class Department {
         System.out.println("Marketing");
         System.out.println("Software");
         System.out.println("Development");
-    }
+    }*/
 
-    String DEPT_Select() {
+    public String DEPT_Select() {
         System.out.println("Select The Department:");
         System.out.println("\n1.Managing");
         System.out.println("2.HR");
@@ -59,13 +59,13 @@ public class Department {
                 System.out.print("\n Enter the desired option:");
                 optn = sc.nextByte();
                 switch (optn){
-                    case 1: return "Training"+"-Production";
+                    case 1: return "Training-Production";
 
-                    case 2:return "Training"+"-Marketing";
+                    case 2:return "Training-Marketing";
 
-                    case 3:return "Training"+"-Software";
+                    case 3:return "Training-Software";
 
-                    case 4:return "Training"+"-Development";
+                    case 4:return "Training-Development";
 
                     default:
                         System.out.println("Enter a valid Option!");
